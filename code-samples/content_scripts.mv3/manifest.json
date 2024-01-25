@@ -1,0 +1,11 @@
+{
+  "name": "Content script MV3 sample",
+  "version": "1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "matches": ["*://*/*"]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Script on click",
+  "version": "1",
+  "manifest_version": 3,
+  "background": {
+    "scripts": ["background.js"],
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Execute script on click"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "121.0a1"
+    },
+    "gecko_android": {
+      "strict_min_version": "121.*"
+    }
+  },
+  "minimum_chrome_version": "121"
+}
