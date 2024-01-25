@@ -1,0 +1,10 @@
+{
+  "name": "Request blocker, options UI only",
+  "description": "Request blocker with declarativeNetRequest, configurable through options UI. Does not require any other scripts.",
+  "version": "1",
+  "manifest_version": 3,
+  "permissions": ["declarativeNetRequest"],
+  "options_ui": {
+    "page": "options.html"
+  }
+}
