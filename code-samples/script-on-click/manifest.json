@@ -12,6 +12,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
+      "id": "script-on-click@example",
       "strict_min_version": "121.0a1"
     },
     "gecko_android": {

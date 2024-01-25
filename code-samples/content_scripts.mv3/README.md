@@ -5,13 +5,18 @@ Visit any website and click in the document to see a dialog with the text "Got c
 
 The code is nearly identical to the Manifest Version 2 version of this
 extension at [content_scripts.mv2](../content_scripts.mv2/). The only
-difference is that this example uses `"manifest_version": 3` and the
-other `"manifest_version": 2` in manifest.json.
+difference is that the other example uses `"manifest_version": 2` in its
+manifest.json, whereas this example uses `"manifest_version": 3`.
+
+Moreover, the `browser_specific_settings` key is specified, because .
+addons.mozilla.org requires the extension ID to be specified in the manifest
+file of Manifest Version 3 extensions.
 
 ## Documentation
 
 * https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts
 * https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts
+* https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_specific_settings
 
 ## Notes for Firefox
 

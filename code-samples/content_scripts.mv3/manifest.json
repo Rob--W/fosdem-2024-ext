@@ -7,5 +7,10 @@
       "js": ["contentscript.js"],
       "matches": ["*://*/*"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "contentscripts.mv3@example"
+    }
+  }
 }
