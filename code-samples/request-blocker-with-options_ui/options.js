@@ -8,21 +8,14 @@ if (typeof browser == "undefined") {
 }
 
 async function setBlockUrls(urls) {
+  let resourceTypes = Object.values(browser.declarativeNetRequest.ResourceType);
   let nextRuleId = 1; // DNR rule ID must be at least 1.
   const newRules = [];
   for (const url of urls) {
     const urlFilter = "|" + url; // "|url" means: URL should start with "url".
     newRules.push({
       id: ++nextRuleId,
-      condition: { urlFilter },
-      action: { type: "block" },
-    });
-
-    // We need a separate rule for "main_frame" because the default DNR rule
-    // condition matches all requests except for "main_frame".
-    newRules.push({
-      id: ++nextRuleId,
-      condition: { urlFilter, resourceTypes: ["main_frame"] },
+      condition: { urlFilter, resourceTypes },
       action: { type: "block" },
     });
   }
