@@ -8,7 +8,7 @@ extension at [content_scripts.mv2](../content_scripts.mv2/). The only
 difference is that the other example uses `"manifest_version": 2` in its
 manifest.json, whereas this example uses `"manifest_version": 3`.
 
-Moreover, the `browser_specific_settings` key is specified, because .
+Moreover, the `browser_specific_settings` key is specified, because
 addons.mozilla.org requires the extension ID to be specified in the manifest
 file of Manifest Version 3 extensions.
 
