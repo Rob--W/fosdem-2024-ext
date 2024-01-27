@@ -17,5 +17,3 @@ browser.action.onClicked.addListener((tab) => {
     injectImmediately: true,
   });
 });
-
-console.log("Loaded background script at " + new Date().toString());
