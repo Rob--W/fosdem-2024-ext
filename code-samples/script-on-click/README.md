@@ -6,6 +6,10 @@ any install-time host permissions.
 Visit any website, and click on the extension's button in the toolbar, which
 executes a script in the current tab that displays the page's URL for example.
 
+[../script-on-click-without-background](script-on-click-without-background) is
+an alternative version of the extension with the same functionality, without
+requiring a background script.
+
 ## Cross-browser background scripts
 
 Historically, background scripts had access to DOM APIs. Chrome has dropped
