@@ -1,0 +1,21 @@
+{
+  "name": "Open link in non-private browsing mode, from private browsing",
+  "version": "1",
+  "manifest_version": 3,
+  "background": {
+    "scripts": ["background.js"],
+    "service_worker": "background.js"
+  },
+  "permissions": ["contextMenus"],
+  "incognito": "split",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "menu-open-nonprivate-link@example",
+      "strict_min_version": "121.0a1"
+    },
+    "gecko_android": {
+      "strict_min_version": "121.0a1"
+    }
+  },
+  "minimum_chrome_version": "121"
+}
