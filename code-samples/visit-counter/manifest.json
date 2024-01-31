@@ -1,0 +1,22 @@
+{
+  "name": "Visit counter",
+  "description": "Shows number of visits to extensionworkshop.com on the extension button.",
+  "version": "1",
+  "manifest_version": 3,
+  "permissions": ["webNavigation", "storage"],
+  "action": {},
+  "background": {
+    "scripts": ["background.js"],
+    "service_worker": "background.js"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "visit-counter@example",
+      "strict_min_version": "121.0a1"
+    },
+    "gecko_android": {
+      "strict_min_version": "121.0a1"
+    }
+  },
+  "minimum_chrome_version": "121"
+}
