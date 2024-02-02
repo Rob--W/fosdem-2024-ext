@@ -9,7 +9,7 @@ if (typeof browser == "undefined") {
 
 let count;
 
-browser.webNavigation.onBeforeNavigate.addListener(async (details) => {
+browser.webNavigation.onCommitted.addListener(async (details) => {
   if (!count) {
     // First run since wakeup, fetch the last known count.
     count = (await browser.storage.session.get({ count: 0 })).count;
