@@ -14,7 +14,9 @@ try {
     target: { tabId: tabs[0].id },
     func: () => {
       // func is serialized and executed in the context of the web page.
-      alert("Clicked extension button and ran script at " + document.URL);
+      setTimeout(() => { // <-- Queue task, so func returns before alert().
+        alert("Clicked extension button and ran script at " + document.URL);
+      }, 0);
     },
     injectImmediately: true,
   });
