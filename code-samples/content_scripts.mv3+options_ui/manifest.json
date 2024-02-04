@@ -1,0 +1,28 @@
+{
+  "name": "Content script MV3 sample, with UI",
+  "version": "1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "service_worker": "background.js"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "contentscripts.mv3-ui@example",
+      "strict_min_version": "121.0a1"
+    },
+    "gecko_android": {
+      "strict_min_version": "121.0a1"
+    }
+  },
+  "minimum_chrome_version": "121"
+}
