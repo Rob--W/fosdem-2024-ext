@@ -1,0 +1,12 @@
+{
+  "name": "Script on click",
+  "version": "1",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Execute script on click"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
