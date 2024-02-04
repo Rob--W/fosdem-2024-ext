@@ -1,0 +1,17 @@
+{
+  "name": "Soft content blocker",
+  "version": "1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["extStyle.css"],
+      "matches": ["*://*/*"]
+    }
+  ]
+}
